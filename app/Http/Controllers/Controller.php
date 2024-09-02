@@ -23,7 +23,6 @@ public function hello() {
     }
 }
 
-Route::get(‘/hello’, [WelcomeController::class,’hello’]);
 
 
 

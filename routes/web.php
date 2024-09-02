@@ -45,6 +45,15 @@ Route::resource('photos', PhotoController::class)->only([ 'index', 'show'
 Route::resource('photos', PhotoController::class)->except([ 'create', 'store', 'update', 'destroy'
 ]);
 
+Route::get('/greeting', function () {
+    return view('hello', ['name' => 'Dyalifia Balqis Susanto']);
+    });
+
+Route::get('/greeting', function () {        
+    return view('blog.hello', ['name' => 'Dyalifia Balqis Susanto']);
+    });
+        
+    
         
 /*
 |--------------------------------------------------------------------------
