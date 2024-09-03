@@ -29,6 +29,8 @@ Route::get('/about', [AboutController::class, 'about']);
 
 Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
 Route::get('/world', function () {
     return 'World';
 });
